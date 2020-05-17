@@ -196,14 +196,14 @@ public class Ventana extends javax.swing.JFrame {
         });
         jScrollPane5.setViewportView(tablaDatos);
 
-        inFila.setModel(new javax.swing.SpinnerNumberModel(26, 5, 26, 1));
+        inFila.setModel(new javax.swing.SpinnerNumberModel(20, 5, 26, 1));
         inFila.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 inFilaStateChanged(evt);
             }
         });
 
-        inColumna.setModel(new javax.swing.SpinnerNumberModel(26, 5, 26, 1));
+        inColumna.setModel(new javax.swing.SpinnerNumberModel(20, 5, 26, 1));
         inColumna.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 inColumnaStateChanged(evt);

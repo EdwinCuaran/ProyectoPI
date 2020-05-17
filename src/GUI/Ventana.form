@@ -423,7 +423,7 @@
             <Component class="javax.swing.JSpinner" name="inFila">
               <Properties>
                 <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
-                  <SpinnerModel initial="26" maximum="26" minimum="5" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                  <SpinnerModel initial="20" maximum="26" minimum="5" numberType="java.lang.Integer" stepSize="1" type="number"/>
                 </Property>
               </Properties>
               <Events>
@@ -433,7 +433,7 @@
             <Component class="javax.swing.JSpinner" name="inColumna">
               <Properties>
                 <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
-                  <SpinnerModel initial="26" maximum="26" minimum="5" numberType="java.lang.Integer" stepSize="1" type="number"/>
+                  <SpinnerModel initial="20" maximum="26" minimum="5" numberType="java.lang.Integer" stepSize="1" type="number"/>
                 </Property>
               </Properties>
               <Events>

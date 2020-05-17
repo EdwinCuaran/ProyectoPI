@@ -1,0 +1,30 @@
+Fila:20
+Columna:20
+
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+
+0-ciencia que estudia los seres vivos -biologia-Horizontal
+1-ciencia que estudia los fenomenos naturales-fisica-Vertical
+2-ciencia que estudia los fenomenos naturales-fisica-Vertical
+3-ciencia que estudia los numeros y figuras geometricas-matematicas-Horizontal
+4-disciplina filosófica que estudia los valores de las cosas-axiologia-Horizontal
+5-ciencia que estudia los cuerpos celestes del universo-astronomia-Vertical

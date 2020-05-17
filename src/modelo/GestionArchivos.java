@@ -101,7 +101,7 @@ public class GestionArchivos {
             String[] col = linea.split(":");
             int columna = Integer.parseInt(col[1]); // lee el tamaño de la columna.
             lector.readLine(); // lee una linea en blanco (salto de linea).
-            System.out.println("Fil: " + fila +" "+ "Col: " + columna+ "\n");
+            //System.out.println("Fil: " + fila +" "+ "Col: " + columna+ "\n");
             
             String[][] matriz = new String[fila][columna]; // guarda la matriz
             //String linea; 
@@ -123,9 +123,9 @@ public class GestionArchivos {
             while((linea = lector.readLine()) != null){
                 String[] datos = linea.split("-");
                 Editor e = new Editor(datos[1], datos[2], datos[3]);
-                System.out.println(contador +"-"+ e.getPregunta()+"-"+e.getRespuesta()+"-"+e.getOrientacion());
+                //System.out.println(contador +"-"+ e.getPregunta()+"-"+e.getRespuesta()+"-"+e.getOrientacion());
                 lista.add(e);
-                contador++;
+                //contador++;
             }
             System.out.println();
             lector.close();
@@ -135,13 +135,14 @@ public class GestionArchivos {
             Tablero t = new Tablero();
             t.escribirEnTablero(fila, columna, matriz, panel);  // revisar, esta pendiente... 
             
+            /*
             // muestra la matriz cargada.
             for (int i=0; i<fila; i++) {
                 for (int j=0; j<columna; j++){
                     System.out.print(matriz[i][j] + " ");
                 }
                 System.out.println();
-            }
+            }*/
         }
         catch(IOException e){
             System.err.println(e);

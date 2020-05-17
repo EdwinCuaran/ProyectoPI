@@ -1,0 +1,30 @@
+Fila:20
+Columna:20
+
+- - - - - - - - - - - - - 4 - - - - - - 
+- - - - - - - - - - - - - i - - - - - - 
+- - - - - - - - - - - - - g - - - - - - 
+- - 2 - - - - - - - - - - u - - - - - - 
+- - d - 6 - - - - - - - - a - - - - - - 
+- - e - i - - - - 3 - - - l - 5 - - - - 
+- - r - s - - - - l - - - d - f - - - - 
+- - i - a - - - - i - - - a - u - - - - 
+- - v - a - - - - m - - - d - n - - - -
+1 c a l c u l o d i f e r e n c i a l - 
+- - d - n - - - - t - - - s - i - - - -  
+- - a - e - - - - e - - - - - o - - - -  
+- - s - w - - - - s - - - - - n - - - -  
+- - - - t - - - - - - - - - - e - - - -  
+- - - - o - - - - - - - - - - s - - - -  
+- - - - n - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - 
+
+1-análisis matemático que consiste en el estudio de cómo cambian las funciones cuando sus variables cambian-calculodiferencial-Horizontal
+2-es un concepto fundamental del análisis matemático aplicado a las funciones-limites-Vertical
+3-otro concepto del calculo de limites-derivadas-Vertical
+4-Dos objetos matemáticos son considerados iguales si los objetos poseen el mismo valor-igualdades-Vertical
+5-relaciones entre conjuntos-funciones-Vertical
+6-fue quien desarrollo el calculo infinitesimal-isaacnewton-Vertical

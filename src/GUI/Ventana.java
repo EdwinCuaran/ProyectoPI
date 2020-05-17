@@ -36,11 +36,6 @@ public class Ventana extends javax.swing.JFrame {
         panelTablero.setBackground(Color.darkGray);
         jScrollPane5.getViewport().setBackground(Color.darkGray); 
         
-        inFila.setBackground(Color.darkGray);
-        inFila.setForeground(Color.darkGray);
-        inColumna.setBackground(Color.darkGray);
-        inColumna.setForeground(Color.darkGray); 
-        
         int fila = (int)inFila.getValue();
         int columna = (int)inColumna.getValue();
         tablero.crearTablero(fila, columna, panelTablero);
@@ -422,8 +417,8 @@ public class Ventana extends javax.swing.JFrame {
         int selecccion = fc.showOpenDialog(this);
         
         if (selecccion == JFileChooser.APPROVE_OPTION){
-            File archivo = fc.getSelectedFile();
-            this.archivo.guardarArchivo(fila, columna, tab, archivo);
+            File file = fc.getSelectedFile(); 
+            archivo.guardarArchivo(fila, columna, tab, file);
             JOptionPane.showMessageDialog(this, "Archivo guardado!");
         }
     }//GEN-LAST:event_botonGuardarArchivoActionPerformed
@@ -464,10 +459,11 @@ public class Ventana extends javax.swing.JFrame {
         int seleccion = fc.showOpenDialog(this);
         
         if (seleccion == JFileChooser.APPROVE_OPTION) {
-            archivo.borrarTabla(tablaDatos); 
-            File archivo = fc.getSelectedFile();
-            this.archivo.abrirArchivo(archivo, panelTablero); 
-            this.archivo.verTabla(tablaDatos); 
+            archivo.borrarTabla(tablaDatos); // borra elementos de la tabla de datos y de la lista(clase editor)
+            
+            File file = fc.getSelectedFile();
+            archivo.abrirArchivo(file, panelTablero, inFila, inColumna);  
+            archivo.verTabla(tablaDatos); 
         }
     }//GEN-LAST:event_botonAbrirArchivoActionPerformed
 

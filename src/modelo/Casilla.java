@@ -18,6 +18,7 @@ public class Casilla extends JFrame {
     JPanel jpanel = (JPanel) this.getContentPane();
     JTextField[][] matriz = new JTextField[10][10];  
     
+    //metodo constructor.
     public Casilla() {
         super();
         alto = ancho = 33; // tamaño de cada casilla.

@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package modelo;
-import GUI.Ventana;
 
 import java.io.*;
 import java.util.*;
@@ -22,7 +21,7 @@ public class GestionArchivos {
     
     // constructor para la clase Editor
     public GestionArchivos(){
-        lista = new Vector<Editor>(); 
+        lista = new Vector<>(); 
     }
     
     // Adiciona un objeto de la clase Editor.
@@ -40,11 +39,12 @@ public class GestionArchivos {
         }
     }
     
+    //retorna la lista de enunciados (preg, resp, orie).
     public Vector<Editor> getEditor(){
         return lista;
     }
     
-    //Muestra las preguntas y respuestas horizontales en una tabla.
+    //Muestra las preguntas y respuestas; verticales y horizontales en una tabla.
     public void verTabla(JTable tabla){
         DefaultTableModel modeloDatos = (DefaultTableModel)tabla.getModel();
         
@@ -89,7 +89,7 @@ public class GestionArchivos {
     }
     
     // metodo para abrir el archivo con los datos(fila, columna, tablero(matriz), objetos(Editor))
-    public void abrirArchivo(File archivo, JPanel panel){
+    public void abrirArchivo(File archivo, JPanel panel, JSpinner inFila, JSpinner inColumna){
         try{
             BufferedReader lector = new BufferedReader(new FileReader(archivo));
             String linea;
@@ -130,6 +130,8 @@ public class GestionArchivos {
             System.out.println();
             lector.close();
             
+            inFila.setValue(fila); // carga el valor de la fila del archivo.
+            inColumna.setValue(columna); // carga el valor de la columna del archivo.
             Tablero t = new Tablero();
             t.escribirEnTablero(fila, columna, matriz, panel);  // revisar, esta pendiente... 
             

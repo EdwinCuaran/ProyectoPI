@@ -40,13 +40,12 @@ public class Tablero extends JFrame{
     }
     
     // lee el tablero para construir la matriz de letras.
-    public void leerTablero(int fil, int col){
+    public void leerTablero(int fil, int col){ 
         matriz = new String[fil][col];
         for(int i=0; i < fil; i++){
-            for (int j = 0; j < col; j++) {  
+            for (int j=0; j<col; j++) {  
                 String caracter = matrizCasillas[i][j].getText();
                 matriz[i][j] = caracter;   
-                
             }
         }
     }
@@ -58,21 +57,17 @@ public class Tablero extends JFrame{
     
     // dibuja un nuevo tablero cargado desde un archivo.
     public void escribirEnTablero(int fil, int col, String[][] _matriz, JPanel panel){
-        panel.removeAll(); // elimina todos los componentes del tablero.
-        panel.repaint(); // re-dibuja el tamaño del tablero m*n
-        matrizCasillas = new JTextField[fil][col];
+        crearTablero(fil, col, panel);
+        
         for(int i=0; i<fil; i++){
-            for (int j = 0; j<col; j++) {    
+            for (int j=0; j<col; j++) {    
                 String caracter = _matriz[i][j];
-                matrizCasillas[i][j] = casilla.crearCasilla();
                 if("-".equals(caracter)){
                     matrizCasillas[i][j].setText("");
                 }
                 else{
                    matrizCasillas[i][j].setText(caracter);  
                 }
-                matrizCasillas[i][j].setLocation(j*30, i*30);  
-                panel.add(matrizCasillas[i][j]);
             }
         }
     }
